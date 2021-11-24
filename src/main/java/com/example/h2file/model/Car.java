@@ -1,4 +1,4 @@
-package com.example.h2file.model.onetoonebidirectional;
+package com.example.h2file.model;
 
 
 import lombok.Getter;

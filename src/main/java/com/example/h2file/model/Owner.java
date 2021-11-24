@@ -1,6 +1,5 @@
-package com.example.h2file.model.onetoonebidirectional;
+package com.example.h2file.model;
 
-import com.example.h2file.model.onetoonebidirectional.Car;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
