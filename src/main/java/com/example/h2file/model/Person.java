@@ -1,4 +1,4 @@
-package com.example.h2file.model.basic;
+package com.example.h2file.model;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
