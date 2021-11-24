@@ -1,5 +1,6 @@
 package com.example.h2file.model;
 
+import com.example.h2file.model.Car;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
