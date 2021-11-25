@@ -1,4 +1,4 @@
-package model;
+package com.example.h2file.model;
 
 import lombok.NoArgsConstructor;
 
