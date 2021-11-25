@@ -1,31 +1,33 @@
 package com.example.h2file.model;
 
-import lombok.Getter;
+
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "University")
+@Table(name = "Cart")
 @NoArgsConstructor
-@Getter
-public class University {
+@Setter
+public class Cart {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
     private String name;
+
     @OneToMany(
+            mappedBy = "cart",
             cascade = CascadeType.ALL,
             orphanRemoval = true
     )
-    @JoinColumn(name = "university_id")
-    private List<Student> students = new ArrayList<>();
+    private List<Item> items = new ArrayList<>();
 
-    public University(String name, List<Student> students) {
+    public Cart(String name) {
         this.name = name;
-        this.students = students;
     }
 }
